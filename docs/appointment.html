@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | Green Garage</title>
+    <link rel="stylesheet" href="css/client.css">
+    <script src="js/appointment.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Green Garage</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#help">Help</a>
+        </nav>
+    </header>
+
+    <main class="form-page">
+        <div class="page-heading">
+            <p class="eyebrow">ONLINE BOOKING</p>
+            <h1>Book an appointment</h1>
+            <p>
+                Fill in the information below. Fields marked * are required.
+            </p>
+        </div>
+
+        <form id="appointmentForm" class="form-card">
+            <h2>Your information</h2>
+            <div class="form-grid">
+                <label>Full name *
+                    <input type="text" name="client_name" required maxlength="100" placeholder="Your full name">
+                </label>
+
+                <label>Phone number *
+                    <input type="tel" name="phone" required maxlength="25" placeholder="e.g. 01XXXXXXXXX">
+                </label>
+
+                <label class="full-width">Address *
+                    <textarea name="address" required maxlength="255" rows="2" placeholder="Your address"></textarea>
+                </label>
+            </div>
+
+            <h2>Your car</h2>
+
+            <div class="form-grid">
+                <label>Car registration / license number *
+                    <input type="text" name="car_registration" required maxlength="50" placeholder="e.g. DHAKA-METRO-GA-1234">
+                </label>
+
+                <label>Car engine number *
+                    <input type="text" name="engine_number" required maxlength="60" placeholder="Engine number">
+                </label>
+            </div>
+
+            <h2>Appointment details</h2>
+            <div class="form-grid">
+                <label>Appointment date *
+                    <input type="date" id="appointmentDate" name="appointment_date" required>
+                </label>
+
+                <label>Preferred mechanic *
+                    <select id="mechanicSelect" name="mechanic_id" required>
+                        <option value="">Choose a date first</option>
+                    </select>
+                </label>
+            </div>
+
+            <p id="availabilityMessage" class="small-note">
+                Choose a date to see the mechanics and their remaining slots.
+            </p>
+
+            <div id="formMessage" class="message" role="status" aria-live="polite"></div>
+            
+            <button class="button" type="submit">Submit appointment</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            Green Garage · Your Journey, Our Responsibility.
+        </p>
+    </footer>
+</body>
+</html>
