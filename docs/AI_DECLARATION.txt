@@ -1,0 +1,91 @@
+============================================================
+           AI USAGE DECLARATION
+============================================================
+
+Name: Fuad Mohammed Jawad
+Student ID: 23201555
+Assignment: Assignment 3: PHP and mySQL Project
+Date: 09/11/2026
+
+------------------------------------------------------------
+1. AI TOOLS USED (check all that apply)
+------------------------------------------------------------
+[ ] None
+[✓] ChatGPT
+[ ] GitHub Copilot
+[✓] Google Gemini
+[ ] Claude
+[ ] Cursor
+[ ] Other: ________________
+
+------------------------------------------------------------
+2. PURPOSE OF AI USE (check all that apply)
+------------------------------------------------------------
+[✓] Learning/understanding concepts
+[✓] Debugging my code
+[ ] Generating code snippets
+[✓] Writing text content
+[✓] Design/styling ideas
+[ ] Image generation
+[ ] Other: ________________
+
+------------------------------------------------------------
+3. DESCRIPTION OF AI USE
+------------------------------------------------------------
+I used ChatGPT mainly to learn and understand PHP and Database
+concepts used in the project. It also helped me debug the booking
+system, particularly with implementing unique car registration and
+engine number validation for appointments on the same date.
+Additionally, I used it for website styling ideas and some text content,
+such as the workshop motto and informational bullet points.
+I used Google Gemini for guidance on the steps required to host
+the project on InfinityFree.
+
+Prompts:
+
+1. How is PHP used in web development?
+2. Explain the basic syntax rules for php?
+3. How to declare variables, arrays, conditions, loops, and functions in PHP?
+4. How does php establish connection with MySQL?
+5. List and Explain Basic MySQL queries
+6. Help me debug the PHP booking logic so that on the 
+same date, 2 or more same car registration or same engine numbers or both cannot
+be entered.
+7. suggest me some styling and color ideas for a car workshop website
+8. suggest me a short motto for a car workshop
+9. Suggest some short informational bullet points for a car workshop website
+that offers online appointment booking. The workshop has five senior mechanics,
+each mechanic can handle up to four cars per day and customers can book
+appointments without creating an account. Keep the wording simple and suitable
+for a homepage.
+10. Which hosting sites are best for hosting a site that uses HTML, CSS, JS
+PHP and MYSQL for free?
+11. Explain the steps for hosting a website on InfinityFree.
+
+
+
+------------------------------------------------------------
+4. AI-ASSISTED SECTIONS
+------------------------------------------------------------
+List specific files/sections where AI helped significantly:
+
+File: _______index.html__________ 
+Section: _________Workshop motto and informational bullet points.
+
+File: ______book_appointment.php___________ 
+Section: ______$engineDuplicate.........on that date.");}
+
+File: ______workshop.sql___________ 
+Section: _____CONSTRAINT unique_engine_per_day.......appointment_date));
+
+------------------------------------------------------------
+5. DECLARATION
+------------------------------------------------------------
+I declare that:
+- This disclosure is complete and accurate
+- I understand all code in my submission
+- I can explain and modify my work if asked
+- I take full responsibility for my submission
+
+Signature: _________Fuad Mohammed Jawad______________
+Date: ____________09/11/2026_______________
