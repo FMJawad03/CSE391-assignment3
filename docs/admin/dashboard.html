@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments | Green Garage Admin</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/admin-dashboard.js" defer></script>
+</head>
+<body>
+    <header class="admin-header">
+        <div>
+            <p class="eyebrow">GREEN GARAGE</p>
+            <h1>Appointment dashboard</h1>
+        </div>
+
+        <button id="logoutButton" class="button button-light">Log out</button>
+    </header>
+
+    <main class="admin-main">
+        <div class="dashboard-heading">
+            <div>
+                <h2>All appointments</h2>
+                <p class="muted">View and update client bookings.</p>
+            </div>
+
+            <button id="refreshButton" class="button">Refresh list</button>
+        </div>
+
+        <div id="dashboardMessage" class="message" role="status"></div>
+        
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Client</th>
+                        <th>Phone</th>
+                        <th>Car registration</th>
+                        <th>Date</th>
+                        <th>Mechanic</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="appointmentRows">
+                    <tr>
+                        <td colspan="6">Loading appointments...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section id="editSection" class="edit-card" hidden>
+            <h2>Edit appointment</h2>
+
+            <p id="editCar" class="muted"></p>
+
+            <form id="editForm">
+                <input type="hidden" id="editId">
+
+                <label>
+                    Appointment date
+                    <input type="date" id="editDate" required>
+                </label>
+
+                <label>
+                    Mechanic
+                    <select id="editMechanic" required></select>
+                </label>
+
+                <p class="muted small">
+                    The system checks the car's existing booking and the mechanic's four-slot limit before saving.
+                </p>
+
+                <div class="form-actions">
+                    <button class="button" type="submit">Save changes</button>
+                    <button class="button button-light" type="button" id="cancelEdit">Cancel</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | Green Garage</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/admin-login.js" defer></script>
+</head>
+<body class="login-body">
+    <main class="login-card">
+        <p class="eyebrow">
+            GREEN GARAGE · STAFF AREA
+        </p>
+        
+        <h1>Admin login</h1>
+
+        <p class="muted">
+            Sign in to manage workshop appointments.
+        </p>
+
+        <form id="loginForm">
+            <label>
+                Username
+                <input type="text" name="username" required autocomplete="username">
+            </label>
+
+            <label>
+                Password
+                <input type="password" name="password" required autocomplete="current-password">
+            </label>
+
+            <div id="loginMessage" class="message" role="status"></div>
+
+            <button type="submit" class="button">
+                Log in
+            </button>
+        </form>
+
+        <a class="back-link" href="../index.html">
+            ← Back to website
+        </a>
+    </main>
+</body>
+</html>
